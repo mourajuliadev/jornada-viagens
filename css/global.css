@@ -25,6 +25,10 @@
   --menu-text-weight: 500;
 }
 
+body {
+    font-family: "Montserrat";
+}
+
 /* CSS RESET */
 body,
 img,
