@@ -16,6 +16,8 @@ header {
 
 .img-mobile {
   display: block;
+  width: 68px;
+  height: 64px;
 }
 
 .img-desktop {
