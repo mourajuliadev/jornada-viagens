@@ -18,21 +18,40 @@
 }
 
 .card header p {
-    font-size: 20px;
-    font-weight: var(--text-weight);
+  font-size: 20px;
+  font-weight: var(--text-weight);
 }
 
-.card header h3{
-    font-size: 40px;
-    font-weight: var(--title-weight);
-    margin: 8px 0px 0px;
+.card header h3 {
+  font-size: 40px;
+  font-weight: var(--title-weight);
+  margin: 8px 0px 0px;
 }
 
-.card header span{
-    font-size: 32px;
-    font-weight: var(--title-weight);
-    margin-top: 24px;
-    display: inline-block;
+.card header span {
+  font-size: 32px;
+  font-weight: var(--title-weight);
+  margin-top: 24px;
+  display: inline-block;
+}
+
+.card.japao {
+  background: url(../img/bg-card-japao.jpg) no-repeat;
+  background-size: cover;
+}
+
+.card.san-andreas {
+  background: url(../img/bg-card-san-andreas.jpg) no-repeat;
+  background-size: cover;
+}
+.card.paraiba {
+  background: url(../img/bg-card-paraiba.jpg) no-repeat;
+  background-size: cover;
+}
+
+.card.manaus {
+  background: url(../img/bg-card-manaus.jpg) no-repeat;
+  background-size: cover;
 }
 
 @media screen and (min-width: 1024px) {
@@ -49,4 +68,3 @@
     font-size: 40px;
   }
 }
-
