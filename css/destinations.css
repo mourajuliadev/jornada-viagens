@@ -1,47 +1,61 @@
-.destination-items {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 24px;
-}
+    .destination-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    }
 
-.destinations .item header {
-  display: block;
-  background-color: transparent;
-  position: static;
-  padding: 0;
-  margin-bottom: 24px;
-}
+    .destinations .item header {
+    display: block;
+    background-color: transparent;
+    position: static;
+    padding: 0;
+    margin-bottom: 24px;
+    }
 
-.destinations .item {
-  width: 312px;
-  height: 754px;
-}
+    .destinations .item header h4 {
+        margin: 24px 0;
+    }
 
-.destinations .item .img-item {
-  width: 100%;
-  height: 368px;
-  background-size: cover;
-}
+    .destinations .item p {
+        margin-bottom: 24px;
+    }
 
-.item h4 {
-  font-weight: var(--title-weight);
-  font-size: 28px;
-}
 
-.item.tokyo .img-item {
-  background: url("../img/tokyo-mobile.jpg") no-repeat;
-  background-size: cover;
-}
+    .destinations .item {
+    width: 312px;
+    height: 754px;
+    }
 
-.item.osaka .img-item {
-  background: url("../img/osaka-mobile.jpg") no-repeat;
-  background-size: cover;
-}
+    .destinations .item .img-item {
+    width: 100%;
+    height: 368px;
+    background-size: cover;
+    }
 
-@media screen and (min-width: 1024px) {
-  .destination-items {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
+    .destinations .button {
+        width: 100%;
+    }
+
+    .item.tokyo .img-item {
+    background: url("../img/tokyo-mobile.jpg") no-repeat;
+    background-size: cover;
+    }
+
+    .item.osaka .img-item {
+    background: url("../img/osaka-mobile.jpg") no-repeat;
+    background-size: cover;
+    }
+
+    @media screen and (min-width: 768px) {
+        .destinations .button {
+            width: 280px;
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+    .destination-items {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    }
