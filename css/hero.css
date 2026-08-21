@@ -1,8 +1,17 @@
-/* MOBILE */
-.hero-img {
+.hero .hero-img,
+.bottom-hero .hero-img {
   height: 400px;
   width: 100%;
+}
+
+/* MOBILE */
+.hero .hero-img {
   background: url("../img/hero-mobile.jpg") no-repeat;
+  background-size: cover;
+}
+
+.bottom-hero .hero-img {
+  background: url(../img/bg-bottom-hero-mobile.png) no-repeat;
   background-size: cover;
 }
 
@@ -17,12 +26,18 @@
 
 /* TABLET */
 @media screen and (min-width: 768px) {
-  .hero-img {
+  .hero .hero-img {
     height: 620px;
     background: url("../img/hero-tablet.jpg") no-repeat;
     background-size: cover;
   }
 
+  .bottom-hero .hero-img {
+    height: 400px;
+    background: url(../img/bg-bottom-hero-tablet.png) no-repeat;
+    background-size: cover;
+
+  }
   .hero h2 {
     padding: 88px 60px;
     font-size: 32px;
@@ -31,13 +46,19 @@
 
 /* DESKTOP min 1024 */
 @media screen and (min-width: 1024px) {
-  .hero-img {
+  .hero .hero-img {
     background: url("../img/hero-desktop.jpg") no-repeat;
     background-size: cover;
   }
 
+
+  .bottom-hero .hero-img {
+    height: 600px;
+    background: url(../img/bg-bottom-hero-desktop.png) no-repeat;
+    background-size: cover;
+  }
   .hero h2 {
-     padding: 88px 120px;
+    padding: 88px 120px;
     font-size: 32px;
   }
 }
@@ -45,6 +66,6 @@
 /* DESKTOP MIN 1920 */
 @media screen and (min-width: 1920px) {
   .hero h2 {
-     padding: 88px 160px;
+    padding: 88px 160px;
   }
 }
